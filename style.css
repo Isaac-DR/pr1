@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    width: auto;
 }
 .header{
     display: flex;
@@ -32,12 +33,14 @@ body{
     gap: 10%;
 }
 
+
 .parte2{
 display: flex;
 align-items: center;
 background-color: #1f2937;
 height: 250px;
 justify-content: center;
+gap: 55px;
 }
 .parte2>div>.texto1{
     font-size: 48px;
@@ -49,7 +52,8 @@ justify-content: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 250px;
+    height: 290px;
+    gap: 20px;
 }
 .parte3 .texto1{
     display: flex;
@@ -57,7 +61,18 @@ justify-content: center;
     flex-basis: 100%;
 }
 .parte3 .imagen{
+    display: flex;
+    flex-direction: column;
     flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.imagen img{
+    background-color: #f9faf8;
+    height: 150px;
+    width: 150px;
+    border-radius: 15%;
+    border: 2px solid #3882f6;
 }
 
 .parte4{
@@ -65,21 +80,46 @@ justify-content: center;
     background-color: #e5e7eb;
     height: 250px;
     justify-content: center;
+    align-items: center;
+    color: #1f2937;
 }
+.quote-text{
+    font-size: 30px;
+    font-style: italic;
+}
+.quote{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 .parte5{
     display: flex;
-    height: 150px;
+    height: 190px;
     align-items: center;
     justify-content: center;
+    color: #f9faf8;
 }
-
+.parte5 .wrapper{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    background-color: #3882f6;
+    height: 100px;
+}
 button{
     background-color: #3882f6;
     color: #f9faf8;
     font-weight: bold;
     border-radius: 15%;
+    border-color: #f9faf8;
+    border-style: solid;
 }
+
 footer{
     display: flex;
     height: 40px;
